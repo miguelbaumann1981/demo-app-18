@@ -34,7 +34,7 @@
             "styles": [
               "src/styles.scss",
               "@angular/material/prebuilt-themes/rose-red.css",
-              "node_modules/primeng/resources/themes/lara-light-teal/theme.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeflex/primeflex.css"
             ],
@@ -97,7 +97,7 @@
             "styles": [
               "src/styles.scss",
               "@angular/material/prebuilt-themes/rose-red.css",
-              "node_modules/primeng/resources/themes/lara-light-teal/theme.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeflex/primeflex.css"
             ],
