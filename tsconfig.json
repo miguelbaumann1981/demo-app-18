@@ -3,6 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@dashboard/*": ["src/app/modules/dashboard/*"],
+      "@factoryConfigurator/*": ["src/app/modules/factory-configurator/*"],
+      "@styles/*": ["src/styles/*"]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -30,5 +36,5 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "enableIvy": false
-  },
+  }
 }

@@ -1,3 +1,5 @@
+@import '@styles/_colors.scss';
+
 .dps-title-page {
   width: 100%;
   display: flex;
@@ -6,7 +8,7 @@
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ddd;
   &__icon {
-    color: lightcoral;
+    color: $purpleColor;
     font-size: 1.5rem;
   }
   &__text {
