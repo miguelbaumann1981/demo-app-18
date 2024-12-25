@@ -1,21 +1,25 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DpsHeaderComponent } from './shared/components/dps-header/dps-header.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    DpsHeaderComponent
-  ],
+  imports: [RouterOutlet, DpsHeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   title = 'demo-app-18';
 
+  translate = inject(TranslateService);
 
-  ngOnInit(): void {
+  constructor() {
+    this.translate.addLangs(['en']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
+
+  ngOnInit(): void {}
 }

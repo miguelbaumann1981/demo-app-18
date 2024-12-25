@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  input,
+  signal,
+} from '@angular/core';
 
 @Component({
   selector: 'dps-title-page',
@@ -9,9 +16,17 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DpsTitlePageComponent {
-
   icon = input<string>();
   text = input.required<string>();
+  isDesktopDesign = signal(false);
+  responsive = inject(BreakpointObserver);
 
-
- }
+  constructor() {
+    this.responsive.observe(Breakpoints.XSmall).subscribe((result) => {
+      this.isDesktopDesign.set(true);
+      if (result.matches) {
+        this.isDesktopDesign.set(false);
+      }
+    });
+  }
+}
