@@ -1,9 +1,7 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  inject,
   OnInit,
-  signal,
 } from '@angular/core';
 import { DpsTitlePageComponent } from '../../../../shared/components/dps-title-page/dps-title-page.component';
 

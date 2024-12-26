@@ -4,11 +4,9 @@ import { DpsTitlePageComponent } from '../../../../shared/components/dps-title-p
 @Component({
   selector: 'dps-page-factory-configurator',
   standalone: true,
-  imports: [
-    DpsTitlePageComponent
-  ],
+  imports: [DpsTitlePageComponent],
   templateUrl: './dps-page-factory-configurator.component.html',
   styleUrl: './dps-page-factory-configurator.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DpsPageFactoryConfiguratorComponent { }
+export class DpsPageFactoryConfiguratorComponent {}

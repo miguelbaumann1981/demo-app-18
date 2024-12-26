@@ -2,13 +2,12 @@ import { Injectable, signal } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MenuByRolesService {
-
   menuItems = signal<MenuItem[]>([]);
 
-  constructor() { 
+  constructor() {
     this.menuItems.set([
       {
         label: 'Factory Configurator',
@@ -104,5 +103,4 @@ export class MenuByRolesService {
       },
     ]);
   }
-
 }

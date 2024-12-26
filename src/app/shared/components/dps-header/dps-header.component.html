@@ -1,6 +1,17 @@
 <p-menubar [model]="items()">
-    <div>
-        <input type="text" pInputText placeholder="{{ 'search' | translate: { product: some() } }}">
-        <button routerLink="/" type="button" pButton label="Dashboard" icon="pi pi-home" style="margin-left:.25em"></button>
-    </div>
+  <div>
+    <input
+      type="text"
+      pInputText
+      placeholder="{{ 'search' | translate: { product: some() } }}"
+    />
+    <button
+      routerLink="/"
+      type="button"
+      pButton
+      label="Dashboard"
+      icon="pi pi-home"
+      style="margin-left: 0.25em"
+    ></button>
+  </div>
 </p-menubar>

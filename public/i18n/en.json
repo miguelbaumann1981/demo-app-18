@@ -1,4 +1,4 @@
 {
-    "home": "Home",
-    "search": "Search {{ product }}"
+  "home": "Home",
+  "search": "Search {{ product }}"
 }
