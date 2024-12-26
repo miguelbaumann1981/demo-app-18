@@ -6,6 +6,7 @@
     "baseUrl": "./",
     "paths": {
       "@dashboard/*": ["src/app/modules/dashboard/*"],
+      "@shared/*": ["src/app/shared/*"],
       "@factoryConfigurator/*": ["src/app/modules/factory-configurator/*"],
       "@styles/*": ["src/styles/*"]
     },

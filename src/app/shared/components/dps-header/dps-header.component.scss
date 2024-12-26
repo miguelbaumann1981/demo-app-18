@@ -1,3 +1,5 @@
-:host {
-  display: block;
+.dps-header {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }

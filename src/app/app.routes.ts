@@ -16,6 +16,10 @@ export const routes: Routes = [
       ).then((m) => m.DpsPageFactoryConfiguratorComponent),
   },
   {
+    path: 'library',
+    loadComponent: () => import('@shared/pages/dps-page-library/dps-page-library.component').then((m) => m.DpsPageLibraryComponent),
+  },
+  {
     path: '**',
     redirectTo: '/',
   },

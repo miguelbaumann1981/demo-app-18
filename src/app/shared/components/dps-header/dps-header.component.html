@@ -1,17 +1,16 @@
 <p-menubar [model]="items()">
-  <div>
+  <div class="dps-header">
     <input
       type="text"
       pInputText
       placeholder="{{ 'search' | translate: { product: some() } }}"
     />
     <button
-      routerLink="/"
+      routerLink="/library"
       type="button"
       pButton
-      label="Dashboard"
-      icon="pi pi-home"
-      style="margin-left: 0.25em"
+      label="Library"
+      icon="pi pi-th-large"
     ></button>
   </div>
 </p-menubar>

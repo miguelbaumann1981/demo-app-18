@@ -1,0 +1,39 @@
+<h2>DPS components library</h2>
+
+<section class="dps-page-library">
+  <!-- #region DPS TITLE PAGE -->
+  <div class="dps-page-library__component">
+    <ul class="dps-page-library__component--features">
+      <li class="dps-page-library__component--features-item"> 
+        <label>Name:</label>
+        <span>Main Title</span>
+      </li>
+      <li class="dps-page-library__component--features-item">
+        <label>Tag:</label>
+        <pre>{{ '<' + 'dps-main-title />' }}</pre>
+      </li>
+      <li class="dps-page-library__component--features-item">
+        <label>Inputs</label> 
+        <span>[text] (string)</span>
+        </li>
+      <li class="dps-page-library__component--features-item">
+        <label>Variants:</label>
+        <p-dropdown
+          [options]="variants()"
+          (onChange)="selectVariant($event)"
+          optionLabel="name"
+          optionValue="id"
+        ></p-dropdown>
+      </li>
+    </ul>
+
+    <div class="dps-page-library__component--visual">
+      @if (selectedVariant() === '0') {
+        <dps-title-page [text]="'Default Title page'" [icon]="'home'" />
+      } @else if (selectedVariant() === '1') {
+        <dps-title-page [text]="'Title page without icon'" />
+      }
+    </div>
+  </div>
+  <!-- #endregion DPS TITLE PAGE -->
+</section>
