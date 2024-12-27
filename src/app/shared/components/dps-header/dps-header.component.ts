@@ -28,15 +28,10 @@ import { MenuByRolesService } from 'src/app/core/services/menu-by-roles.service'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DpsHeaderComponent implements OnInit {
-  /*
-   ** Public variables
-   */
+
   items = signal<MenuItem[]>([]);
   some = signal<string>('something');
 
-  /*
-   ** Services
-   */
   menuByRolesService = inject(MenuByRolesService);
 
   ngOnInit(): void {
