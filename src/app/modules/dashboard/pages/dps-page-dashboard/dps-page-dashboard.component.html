@@ -2,49 +2,33 @@
   <dps-title-page [icon]="'home'" [text]="'Dashboard'" />
 
   <section class="dps-page-dashboard__content">
-    <p-panel header="Panel 1" [toggleable]="true">
-      <ng-template pTemplate="icons">
-        <button pButton class="p-panel-header-icon p-link">
-          <span class="pi pi-cog"></span>
-        </button>
-      </ng-template>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </p-panel>
+    <dps-panel-dashboard
+      [title]="'Main Panel'"
+      [description]="
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      "
+      [hasOptions]="true"
+    />
 
-    <p-panel header="Panel 2" [toggleable]="true">
-      <ng-template pTemplate="icons">
-        <button pButton class="p-panel-header-icon p-link">
-          <span class="pi pi-cog"></span>
-        </button>
-      </ng-template>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </p-panel>
+    <dps-panel-dashboard
+      [title]="'Secondary Panel'"
+      [description]="'Secondary Panel Description'"
+      [hasOptions]="false"
+    />
 
-    <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
-      <ng-template pTemplate="header">
-        <img
-          alt="Card"
-          src="https://canvasjs.com/wp-content/uploads/images/gallery/javascript-charts/overview/javascript-charts-graphs-index-data-label.png"
-        />
-      </ng-template>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error
-        repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa
-        ratione quam perferendis esse, cupiditate neque quas!
-      </p>
-      <ng-template pTemplate="footer">
-        <p-button label="Save" icon="pi pi-check"></p-button>
-        <p-button
-          label="Cancel"
-          icon="pi pi-times"
-          styleClass="p-button-secondary"
-          [style]="{ 'margin-left': '.5em' }"
-        ></p-button>
-      </ng-template>
-    </p-card>
+    <dps-card-graphics
+      [title]="'Card Title'"
+      [subtitle]="'Card Subtitle'"
+      [image]="
+        'https://canvasjs.com/wp-content/uploads/images/gallery/javascript-charts/overview/javascript-charts-graphs-index-data-label.png'
+      "
+      [description]="
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!'
+      "
+      [yesButton]="'Save'"
+      [noButton]="'Cancel'"
+    />
+
+
   </section>
 </main>

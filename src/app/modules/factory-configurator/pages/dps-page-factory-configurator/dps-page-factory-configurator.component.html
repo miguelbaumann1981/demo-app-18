@@ -6,4 +6,8 @@
             <dps-factory-item [factoryItem]="item" />
         }
     </div>
+
+    @if(isErrorService()) {
+        <p-message severity="warn" [text]="errorMessage()" styleClass="mr-2"></p-message>
+    }
 </section>

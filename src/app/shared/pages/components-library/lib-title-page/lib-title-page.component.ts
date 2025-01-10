@@ -2,6 +2,8 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { DpsTitlePageComponent } from '@shared/components/dps-title-page/dps-title-page.component';
 import { DropdownModule } from 'primeng/dropdown';
 
+interface Variant { id: string; name: string; }
+
 
 @Component({
   selector: 'lib-title-page',
@@ -13,7 +15,7 @@ import { DropdownModule } from 'primeng/dropdown';
 })
 export class LibTitlePageComponent { 
   
-  variants = signal<any[]>([]);
+  variants = signal<Variant[]>([]);
   selectedVariant = signal('0');
   
   constructor() {

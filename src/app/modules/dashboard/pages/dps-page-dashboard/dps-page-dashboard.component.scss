@@ -7,7 +7,7 @@
     &__content {
         display: flex;
         gap: 2rem;
-        p-card, p-panel {
+        dps-card-graphics, dps-panel-dashboard {
             width: 31%;
         }
     }
@@ -18,7 +18,7 @@
     .dps-page-dashboard {
         &__content {
             flex-direction: column;
-            p-card, p-panel {
+            dps-card-graphics, dps-panel-dashboard {
                 width: 100%;
             }
         }

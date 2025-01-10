@@ -1,17 +1,15 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DpsTitlePageComponent } from '@shared/components/dps-title-page/dps-title-page.component';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
+import { DpsPanelDashboardComponent } from '@shared/components/dps-panel-dashboard/dps-panel-dashboard.component';
+import { DpsCardGraphicsComponent } from '@shared/components/dps-card-graphics/dps-card-graphics.component';
 
 @Component({
   selector: 'dps-page-dashboard',
   standalone: true,
-  imports: [DpsTitlePageComponent, CardModule, ButtonModule, PanelModule],
+  imports: [DpsTitlePageComponent, DpsPanelDashboardComponent, DpsCardGraphicsComponent],
   templateUrl: './dps-page-dashboard.component.html',
   styleUrl: './dps-page-dashboard.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DpsPageDashboardComponent implements OnInit {
-  ngOnInit() {}
+export class DpsPageDashboardComponent {
 }

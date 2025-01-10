@@ -3,7 +3,7 @@
     <h3 class="dps-factory-item__subtitle">{{ factoryItem()?.location }}</h3>
     <h4 class="dps-factory-item__employees">{{ factoryItem()?.numberOfEmployees }} Employees</h4>
     <h5 class="dps-factory-item__date">From {{ factoryItem()?.dateOfBuilding }}</h5>
-    <label>Products:</label>
+    <span>Products:</span>
     <ul>
         @for (product of factoryItem()?.manufacturingProducts; track product) {
             <li>{{ product }}</li>
