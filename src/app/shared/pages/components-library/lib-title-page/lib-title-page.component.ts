@@ -12,19 +12,10 @@ import { DropdownModule } from 'primeng/dropdown';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LibTitlePageComponent { 
-  /**
-   * List of variant options for the title page.
-   */
+  
   variants = signal<any[]>([]);
-
-  /**
-   * Currently selected variant ID.
-   */
   selectedVariant = signal('0');
-
-  /**
-   * Initializes the component with default variant options.
-   */
+  
   constructor() {
     this.variants.set([
       { id: '0', name: 'Default' },

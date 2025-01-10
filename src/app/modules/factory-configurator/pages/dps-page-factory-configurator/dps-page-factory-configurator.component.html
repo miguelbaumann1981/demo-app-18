@@ -1,1 +1,9 @@
-<dps-title-page [icon]="'factory'" [text]="'Factory Configurator'" />
+<section class="dps-page-factory-configurator">
+    <dps-title-page [icon]="'factory'" [text]="'Factory Configurator'" />
+
+    <div class="dps-page-factory-configurator__list">
+        @for (item of factoryList(); track item?.id) {
+            <dps-factory-item [factoryItem]="item" />
+        }
+    </div>
+</section>
