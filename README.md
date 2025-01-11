@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
+## Install packages
+Run `npm config set legacy-peer-deps true` to let legacy dependencies install.
+Run `npm install` to install dependencies.
+
+
 ## Development server
 
 Run `npx json-server --watch src/assets/data/factories.json` to run the mock service.

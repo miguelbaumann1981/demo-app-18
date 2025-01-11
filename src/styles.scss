@@ -1,4 +1,10 @@
-@import "./styles/_colors.scss";
+@import './styles/_colors.scss';
+@import './styles/_fonts.scss';
+
+* {
+  font-family: 'Arimo', sans-serif;
+  // font-family: 'Helvetica Neue', sans-serif;
+}
 
 html,
 body {
@@ -6,7 +12,6 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
 }
 
 button {

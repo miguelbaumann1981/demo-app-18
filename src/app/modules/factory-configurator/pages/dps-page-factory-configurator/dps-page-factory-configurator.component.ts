@@ -13,7 +13,11 @@ import { MessageModule } from 'primeng/message';
   styleUrl: './dps-page-factory-configurator.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class DpsPageFactoryConfiguratorComponent {
+  /**
+   * Declarations
+   */
   factoryList = signal<FactoryListItem[]>([]);
   errorMessage = signal<string | undefined>('There are no factories available');
   isErrorService = signal<boolean>(false);
@@ -23,7 +27,10 @@ export class DpsPageFactoryConfiguratorComponent {
     this.loadFactories();
   }
 
-  async loadFactories() {
+  /**
+   * Loads the list of factories from the service.
+   */
+  async loadFactories(): Promise<void> {
     try {
       const factories = await this.factoriesService.getAllFactories();
       this.factoryList.set(factories);

@@ -19,9 +19,12 @@
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
-        label {
+        span {
           color: lightcoral;
           font-size: 0.9rem;
+        }
+        strong {
+          font-weight: 500;
         }
         i {
           color: grey;
@@ -30,6 +33,7 @@
           font-weight: bold;
           font-size: 1rem;
           margin: 0;
+          font-weight: 500;
         }
         ul {
           margin: 0;

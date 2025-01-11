@@ -1,7 +1,10 @@
 <main class="dps-page-dashboard">
+  <!-- #region Title Section -->
   <dps-title-page [icon]="'home'" [text]="'Dashboard'" />
+  <!-- #endregion -->
 
   <section class="dps-page-dashboard__content">
+    <!-- #region Main Panel -->
     <dps-panel-dashboard
       [title]="'Main Panel'"
       [description]="
@@ -9,13 +12,17 @@
       "
       [hasOptions]="true"
     />
+    <!-- #endregion -->
 
+    <!-- #region Secondary Panel -->
     <dps-panel-dashboard
       [title]="'Secondary Panel'"
       [description]="'Secondary Panel Description'"
       [hasOptions]="false"
     />
+    <!-- #endregion -->
 
+    <!-- #region Card Graphics -->
     <dps-card-graphics
       [title]="'Card Title'"
       [subtitle]="'Card Subtitle'"
@@ -28,7 +35,6 @@
       [yesButton]="'Save'"
       [noButton]="'Cancel'"
     />
-
-
+    <!-- #endregion -->
   </section>
 </main>
